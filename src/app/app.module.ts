@@ -5,16 +5,18 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import {AccueilModule} from './accueil/accueil.module';
+import {PlanModule} from './plan/plan.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    AccueilModule
+    AccueilModule,
+    PlanModule
   ],
   providers: [],
   bootstrap: [AppComponent]

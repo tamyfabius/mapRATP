@@ -12,6 +12,8 @@ import {ContactComponent} from './contact/contact.component';
 interface Route{
   path?: string;
   component?: Type<any>;
+  pathMatch?: string;
+  redirectTo?: string;
 }
 
 export const AppRoutes : Route[] = [

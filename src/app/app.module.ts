@@ -9,6 +9,7 @@ import {PlanModule} from './plan/plan.module';
 import {HoraireModule} from './horaire/horaire.module';
 import {ContactModule} from './contact/contact.module';
 
+
 @NgModule({
   declarations: [
     AppComponent

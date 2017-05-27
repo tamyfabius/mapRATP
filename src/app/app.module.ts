@@ -12,12 +12,9 @@ import {ContactModule} from './contact/contact.module';
 
 import {AppRoutes} from './app.routes';
 
-
-
 @NgModule({
   declarations: [
-    AppComponent,
-    RouterModule.forRoot(AppRoutes)
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +23,8 @@ import {AppRoutes} from './app.routes';
     AccueilModule,
     PlanModule,
     HoraireModule,
-    ContactModule
+    ContactModule,
+    RouterModule.forRoot(AppRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]

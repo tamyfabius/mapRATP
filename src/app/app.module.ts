@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import {RouterModule} from '@angular/router';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
@@ -9,6 +10,7 @@ import {PlanModule} from './plan/plan.module';
 import {HoraireModule} from './horaire/horaire.module';
 import {ContactModule} from './contact/contact.module';
 
+import {AppRoutes} from './app.routes';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import {ContactModule} from './contact/contact.module';
     AccueilModule,
     PlanModule,
     HoraireModule,
-    ContactModule
+    ContactModule,
+    RouterModule.forRoot(AppRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,1 +1,203 @@
 /* You can add global styles to this file, and also import other style files */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body{
+  position: relative;
+  /*background-image:-moz-linear-gradient(to left, #4ACBBC, #4EC2E0);*/
+  /*background-image:-webkit-linear-gradient(to left, #4ACBBC, #4EC2E0);*/
+  /*background-image:-o-linear-gradient(to left, #4ACBBC, #4EC2E0);*/
+  /*background-image:linear-gradient(to left, #4ACBBC, #4EC2E0);*/
+
+ /* background: #dbbf56;*/
+
+  /*background: #43C6AC;  !* fallback for old browsers *!*/
+  /*background: -webkit-linear-gradient(to right, #F8FFAE, #43C6AC);  !* Chrome 10-25, Safari 5.1-6 *!*/
+  /*background: linear-gradient(to right, #F8FFAE, #43C6AC); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
+
+  background: #c2e59c;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #64b3f4, #c2e59c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+  font-family: 'Lato', sans-serif !important;
+  font-size: 14px;
+  font-weight: normal;
+  overflow-x: hidden !important;
+  line-height: 25px;
+  text-align: center;
+}
+
+a {
+  color: #e96656;
+  -webkit-transition: all 700ms;
+  transition: all 700ms;
+}
+
+a,a:hover {
+  text-decoration: none;
+}
+a:hover {
+  color: #cb4332;
+}
+p {
+  margin: 0;
+}
+.full-width {
+  width: 100%;
+  margin: auto;
+}
+ul, ol {
+  padding-left: 0 !important;
+}
+li {
+  list-style: none;
+}
+i {
+  vertical-align: middle;
+}
+/*---------------------------------------
+ **   TYPOGRAPHY                     -----
+-----------------------------------------*/
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-style: inherit;
+  vertical-align: baseline;
+}
+h1,h2 {
+  font-family: 'Montserrat', 'sans-serif';
+  font-weight: 700;
+  text-transform: uppercase;
+}
+h1 {
+  font-size: 55px;
+}
+h2 {
+  font-size: 45px !important;
+  line-height: 55px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 17px;
+}
+h6 {
+  font-size: 16px;
+}
+
+/*---------------------------------------
+ **   BUTTONS                        -----
+-----------------------------------------*/
+
+.buttons {
+  text-align: center;
+  margin-bottom: 100px;
+  margin-top: 45px;
+}
+.button {
+  display: inline-block !important;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 35px 10px 35px;
+  border-radius: 4px;
+  margin: 10px;
+}
+.custom-button {
+  display: inline-block !important;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 13px 35px 13px 35px;
+  border-radius: 4px;
+  margin: 10px;
+  border: none;
+}
+.red-btn {
+  background: #e96656;
+}
+.green-btn {
+  background: #20AA73;
+}
+.blue-btn {
+  background: #3ab0e2;
+}
+.yellow-btn {
+  background: #E7AC44;
+}
+.red-btn,.green-btn,.blue-btn,.yellow-btn {
+  color: #FFF;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.blue-btn:hover {
+  color: #FFF;
+  background: #1288b9;
+}
+.red-btn:hover {
+  color: #FFF;
+  background: #cb4332;
+}
+.green-btn:hover {
+  color: #FFF;
+  background: #069059;
+}
+.yellow-btn:hover {
+  color: #FFF;
+  background: #d8951e;
+}
+
+
+/*---------------------------------------
+ **   COLORS                         -----
+-----------------------------------------*/
+
+/** BACKGROUNDS **/
+.red-bg {
+  background: #e96656;
+}
+.green-bg {
+  background: #34d293;
+}
+.blue-bg {
+  background: #3ab0e2;
+}
+.yellow-bg {
+  background: #E7AC44;
+}
+.dark-bg {
+  background: #404040;
+}
+.white-bg {
+  background:  #FFFFFF;
+}
+
+/** FOR TEXTS AND ICON FONTS **/
+.red-text {
+  color: #e96656;
+}
+.green-text {
+  color: #34d293;
+}
+.blue-text {
+  color: #3ab0e2;
+}
+.yellow-text {
+  color: #f7d861;
+}
+.dark-text {
+  color: #404040;
+}
+.white-text {
+  color: #FFFFFF;
+}
+
+

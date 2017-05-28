@@ -1,0 +1,28 @@
+.header {
+  /*background: rgba(0, 0, 0, 0.2);*/
+  min-height: 775px;
+  position: relative;
+  overflow: hidden;
+}
+
+.intro {
+  text-align: center;
+  color: #FFF;
+  margin-top: 15%;
+  line-height: 65px;
+  z-index: 0;
+}
+
+.bottom-message-section {
+  margin-top: 14%;
+  position: relative;
+}
+
+.short-text {
+  margin: auto;
+  text-align: center;
+  color: rgba(255,255,255,0.7);
+  text-transform: uppercase;
+}
+
+

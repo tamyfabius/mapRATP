@@ -8,7 +8,7 @@ import {PlanComponent} from './plan/plan.component';
 import {HoraireComponent} from './horaire/horaire.component';
 import {ContactComponent} from './contact/contact.component';
 
-interface Route{
+interface Route {
   path?: string;
   component?: Type<any>;
   pathMatch?: string;
@@ -20,5 +20,5 @@ export const AppRoutes: Route[] = [
   {path: 'plan', component: PlanComponent},
   {path: 'horaire', component: HoraireComponent},
   {path: 'contact', component: ContactComponent},
-  {path: '', redirectTo: 'accueil', pathMatch: 'full'},
+  {path: '', redirectTo: 'accueil', pathMatch: 'full'}
 ];

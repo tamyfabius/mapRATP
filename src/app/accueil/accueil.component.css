@@ -1,6 +1,6 @@
 .header {
   /*background: rgba(0, 0, 0, 0.2);*/
-  min-height: 48.438em;
+  min-height: 775px;
   position: relative;
   overflow: hidden;
 }
@@ -9,7 +9,7 @@
   text-align: center;
   color: #FFF;
   margin-top: 15%;
-  line-height: 4.063em;
+  line-height: 65px;
   z-index: 0;
 }
 

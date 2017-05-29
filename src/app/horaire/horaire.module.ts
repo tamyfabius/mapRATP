@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {HoraireComponent} from './horaire.component';
 import { RouterModule } from '@angular/router';
+import {HoraireComponent} from './horaire.component';
+import {HoraireService} from './horaire.service';
 
 @NgModule({
   imports: [
@@ -9,6 +10,7 @@ import { RouterModule } from '@angular/router';
     RouterModule
   ],
   declarations: [HoraireComponent],
-  exports: [HoraireComponent]
+  exports: [HoraireComponent],
+  providers: [HoraireService]
 })
-export class HoraireModule { }
+export class HoraireModule {}

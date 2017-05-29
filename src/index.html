@@ -10,6 +10,22 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <!-- WEBFONT -->
   <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic|Montserrat:700,400|Homemade+Apple' rel='stylesheet' type='text/css'>
+
+  <!-- SCRIPT JQUERY -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $(".selLabel").click(function () {
+        $('.dropdown').toggleClass('active');
+      });
+
+      $(".dropdown-list li").click(function() {
+        $('.selLabel').text($(this).text());
+        $('.dropdown').removeClass('active');
+        $('.selected-item p span').text($('.selLabel').text());
+      });
+    });
+  </script>
 </head>
 <body>
   <app-root>Loading...</app-root>

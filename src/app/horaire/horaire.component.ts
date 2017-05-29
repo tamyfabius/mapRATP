@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {HoraireService} from "./horaire.service";
 
 @Component({
   moduleId: module.id,
@@ -8,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HoraireComponent implements OnInit {
 
-  constructor() { }
+  bus: string = 'bus';
+  code: string = '';
+
+  dataStations: any[] = [];
+  constructor(private _horaireService: HoraireService) { }
 
   ngOnInit() {
+    this._horaireService.getStationsByTypeCode().subscribe(result => console.log(this.dataStations = result));
   }
+
+
+}
+
+interface dataRatp {
 
 }

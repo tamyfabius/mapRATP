@@ -96,6 +96,18 @@ h6 {
 }
 
 /*---------------------------------------
+      Header
+--------------------------------------- */
+
+.intro {
+  text-align: center;
+  color: #FFF;
+  margin-top: 15%;
+  line-height: 65px;
+  z-index: 0;
+}
+
+/*---------------------------------------
  **   BUTTONS                        -----
 -----------------------------------------*/
 
@@ -199,5 +211,45 @@ h6 {
 .white-text {
   color: #FFFFFF;
 }
+
+/*----OTHER FOCUSES ----*/
+.other-focuses {
+  background: url(assets/img/lines.png) repeat-x center;
+}
+
+.other-focuses-destination{
+.other-focuses-station{
+  margin-bottom: 10px !important;
+}
+}
+
+.other-focuses-station{
+  margin-top: 25px;
+}
+.other-focuses .section-footer-title {
+  background: #92CBC9;
+  padding: 0 15px;
+  color: #404040;
+  font-weight: bold;
+}
+.other-focus-list {
+  padding-top: 5px;
+  margin-bottom: -17px;
+}
+.other-focus-list ul li {
+  display: inline-block;
+  margin-right: 50px;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+}
+.other-focus-list ul li:last-child {
+  margin-right: 0;
+}
+.other-focus-list ul li i {
+  margin-right: 8px;
+}
+
+
+
 
 

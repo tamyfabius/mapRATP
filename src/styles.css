@@ -21,8 +21,6 @@ body{
   background: #c2e59c;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #64b3f4, #c2e59c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
   font-family: 'Lato', sans-serif !important;
   font-size: 14px;
   font-weight: normal;
@@ -227,10 +225,12 @@ h6 {
   margin-top: 25px;
 }
 .other-focuses .section-footer-title {
-  background: #92CBC9;
+  background: #FFFFFF;
   padding: 0 15px;
-  color: #404040;
-  font-weight: bold;
+  color: #5B4C5C;
+  font-weight: bolder;
+  font-size: 1.2em;
+  text-transform: uppercase;
 }
 .other-focus-list {
   padding-top: 5px;
@@ -249,7 +249,37 @@ h6 {
   margin-right: 8px;
 }
 
+/***************************************
+        STYLE SELECT
+****************************************/
+.custom-select {
+  padding: 0;
+  border: 3px solid #D1D3D4;
+  width: 100%;
+  margin: 20px auto 25px;
+  overflow: hidden;
+  font-size: 1.2em;
+  background: transparent url(assets/img/triangle_dark.png) no-repeat 94% 50%;
+}
 
+.custom-select select {
+  padding: 10px 15px;
+  cursor: pointer;
+  width: 100%;
+  color: #5b4c5c;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  background-image: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+}
 
+.custom-select select:focus {
+  outline: none;
+}
 
 

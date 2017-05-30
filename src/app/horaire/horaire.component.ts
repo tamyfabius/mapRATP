@@ -12,16 +12,27 @@ export class HoraireComponent implements OnInit {
   bus: string = 'bus';
   code: string = '';
 
-  dataStations: any[] = [];
-  constructor(private _horaireService: HoraireService) { }
+  dataStations: Array<any> = [];
+  dataDestination: Array<any> = [];
 
-  ngOnInit() {
-    this._horaireService.getStationsByTypeCode().subscribe(result => console.log(this.dataStations = result));
+  constructor(private _horaireService: HoraireService) {
   }
 
+  ngOnInit() {
+    this.getListStations();
+    this.getDestination();
+  }
 
+  getDestination() {
+    this._horaireService
+      .getDestinationsByTypeCode()
+      .subscribe(result => this.dataDestination = result.result.destinations);
+  }
+
+  getListStations() {
+    this._horaireService
+      .getStationsByTypeCode()
+      .subscribe(result => this.dataStations = result.result);
+  }
 }
 
-interface dataRatp {
-
-}

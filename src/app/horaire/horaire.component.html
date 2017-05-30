@@ -1,116 +1,58 @@
 <div class="container">
-  <h1 class="titleBus">Bus 108</h1>
-
-  <div class="bottom-destStat-section">
-    <!-- OTHER FOCUS DESTINATION -->
-    <div class="other-focuses other-focuses-destination">
-      <h5><span class="section-footer-title">Destination</span></h5>
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h3 class="panel-title">Ligne Bus 108</h3>
     </div>
+    <div class="panel-body">
+      <div class="bottom-destStat-section">
+        <!-- OTHER FOCUS DESTINATION -->
+        <div class="other-focuses other-focuses-destination">
+          <h5><span class="section-footer-title">Destination</span></h5>
+        </div>
 
-    <!-- DESTINATION -->
-    <div class="row">
-      <div class="col-md-12">
-          <div class="funkyradio">
-            <div class="funkyradio-success">
-              <input type="radio" name="radio" id="radio3" />
-              <label for="radio3">Destination 1</label>
-            </div>
-            <div class="funkyradio-success">
-              <input type="radio" name="radio" id="radio4" />
-              <label for="radio4">Destination 2</label>
+        <!-- DESTINATION -->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="funkyradio">
+              <div class="funkyradio-success" *ngFor="let destination of dataDestination">
+                <input type="radio" name="radio" id={{destination.way}} value={{destination.name}}/>
+                <label for={{destination.way}}>{{destination.name}} </label>
+              </div>
             </div>
           </div>
+        </div>
+
+        <!-- STATIONS -->
+        <!-- OTHER FOCUS STATIONS -->
+        <div class="other-focuses other-focuses-station">
+          <h5><span class="section-footer-title">Station</span></h5>
+        </div>
+        <!--<div class="row">-->
+        <!--<div class="col-md-12">-->
+        <!--<form>-->
+        <!--<select name="" id="" class="form-control" >-->
+        <!--<option value="" *ngFor="let station of dataStations.stations">{{ station.name }}</option>-->
+        <!--</select>-->
+        <!--</form>-->
+        <!--</div>-->
+        <!--</div>-->
+
+        <!-- Other Station -->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="custom-select">
+              <select id="fxselect" name="fxselect">
+                <option value="-1" selected="">Choisissez votre station</option>
+                <option *ngFor="let stat of dataStations.stations" value="{{ stat.name }}">{{ stat.name }}</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
-
-    <!-- OTHER FOCUS STATIONS -->
-    <div class="other-focuses other-focuses-station">
-      <h5><span class="section-footer-title">Station</span></h5>
-    </div>
-
-    <!--<div class="row">-->
-      <!--<div class="col-md-12">-->
-        <!--<div style="width: 300px; margin-bottom: 20px;">-->
-          <!--<h3>Select a single city</h3>-->
-          <!--<ng-select [allowClear]="true"-->
-                     <!--[items]="items"-->
-                     <!--[disabled]="disabled"-->
-                     <!--(data)="refreshValue($event)"-->
-                     <!--(selected)="selected($event)"-->
-                     <!--(removed)="removed($event)"-->
-                     <!--(typed)="typed($event)"-->
-                     <!--placeholder="No city selected">-->
-          <!--</ng-select>-->
-          <!--<p></p>-->
-          <!--<pre>{{value.text}}</pre>-->
-          <!--<div>-->
-            <!--<button type="button" class="btn btn-primary"-->
-                    <!--[(ngModel)]="disabledV" btnCheckbox-->
-                    <!--btnCheckboxTrue="1" btnCheckboxFalse="0">-->
-              <!--{{disabled === '1' ? 'Enable' : 'Disable'}}-->
-            <!--</button>-->
-          <!--</div>-->
-        <!--</div>-->
-      <!--</div>-->
-    <!--</div>-->
-
-
-    <!-- STATIONS -->
-    <!--<div class="row">-->
-      <!--<div class="col-md-12">-->
-          <!--<div class="selected-item">-->
-            <!--<p><span></span></p>-->
-          <!--</div>-->
-          <!--<div class="dropdown">-->
-            <!--<span class="selLabel">Choisissez votre station</span>-->
-            <!--<input type="hidden" name="cd-dropdown">-->
-            <!--<ul class="dropdown-list">-->
-              <!--<li data-value="1">-->
-                <!--<span>Jointville-le-Pont RER</span>-->
-              <!--</li>-->
-              <!--<li data-value="2">-->
-                <!--<span>Carrefour de la Résistance</span>-->
-              <!--</li>-->
-              <!--<li data-value="3">-->
-                <!--<span>Verdun</span>-->
-              <!--</li>-->
-              <!--<li data-value="4">-->
-                <!--<span>Les Platanes</span>-->
-              <!--</li>-->
-              <!--<li data-value="5">-->
-                <!--<span>La Fourchette de Champigny</span>-->
-              <!--</li>-->
-              <!--<li data-value="6">-->
-                <!--<span>Aristide Briand-Le Plant</span>-->
-              <!--</li>-->
-              <!--<li data-value="7">-->
-                <!--<span>Jean-Baptiste Clément</span>-->
-              <!--</li>-->
-              <!--<li data-value="8">-->
-                <!--<span>Plade de Champigny</span>-->
-              <!--</li>-->
-              <!--<li data-value="9">-->
-                <!--<span>Guittard</span>-->
-              <!--</li>-->
-              <!--<li data-value="10">-->
-                <!--<span>Mairie-Marché</span>-->
-              <!--</li>-->
-              <!--<li data-value="11">-->
-                <!--<span>Mairie de Champigny</span>-->
-              <!--</li>-->
-              <!--<li data-value="12">-->
-                <!--<span>Rue à Trait</span>-->
-              <!--</li>-->
-              <!--<li data-value="13">-->
-                <!--<span>Polyclinique</span>-->
-              <!--</li>-->
-              <!--<li data-value="14">-->
-                <!--<span>Champigny-Jeanne Vacher</span>-->
-              <!--</li>-->
-            <!--</ul>-->
-          <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
   </div>
+  <!--<h1 class="titleBus">Bus 108</h1>-->
+
 
 </div>

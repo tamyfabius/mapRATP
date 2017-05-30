@@ -2,7 +2,7 @@ import {Injectable} from '@angular/core';
 import {Http} from '@angular/http';
 
 import 'rxjs/add/operator/map';
-import 'rxjs/add/operator/do';
+// import 'rxjs/add/operator/do';
 import 'rxjs/add/operator/catch';
 
 import {Observable} from 'rxjs/Observable';
@@ -104,7 +104,7 @@ export class HoraireService {
   getLineByTypeCode(){
     return this._http
       .get(this.urlApi+"lines/bus/108")
-      .do(x => console.log(x))
+      // .do(x => console.log(x))
       .map(line => line.json())
       .catch(error => {
         let errorMessage = `Une erreur ${error.status} est survenue en tentant de joindre ${error.url}`;
@@ -115,7 +115,6 @@ export class HoraireService {
   getSchedulesByTypeCodeStationWay(){
     return this._http
       .get(this.urlApi+"schedules/bus/108")
-      .do(x => console.log(x))
       .map(schedules => schedules.json())
       .catch(error => {
         let errorMessage = `Une erreur ${error.status} est survenue en tentant de joindre ${error.url}`;
@@ -126,7 +125,6 @@ export class HoraireService {
   getStationsByTypeCode(){
     return this._http
       .get(this.urlApi+"stations/bus/108")
-      .do(x => console.log(x))
       .map(stations => stations.json())
       .catch(error => {
         let errorMessage = `Une erreur ${error.status} est survenue en tentant de joindre ${error.url}`;

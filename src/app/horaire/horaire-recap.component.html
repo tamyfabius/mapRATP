@@ -1,0 +1,190 @@
+
+
+    <div class="container-fluid">
+      <h2>Bus N°: 108</h2>
+      <div>arrive dans :<span id="arrive">2 min</span> </div>
+      <div>Direction: <span id="direction">{{destDataBus}}</span></div>
+      <hr>
+      <div>Station: <span id="station">{{statDataBus}}</span></div>
+      <hr>
+
+      <svg version="1.1" id="svg-aller" viewBox="-20 -100 1100 200">
+
+        <g id="plan" >
+          <text transform="rotate(-45, 50,40 )" font-size="16px">Joinville-le-Pont RER</text>
+          <circle cy="50" cx="30" r="20" stroke="#d69ace" stroke-width="4" fill="#d69ace" />
+
+          <line y1="50" x1="50" y2="50" x2="100" style="stroke:#d69ace;stroke-width:10" />
+
+          <text transform="rotate(-45, 80, -70)" font-size="14px">Carrefour de la Résistance</text>
+          <circle cy="50" cx="100" r="10" stroke="#d69ace" stroke-width="4" fill="#d69ace" />
+
+          <line y1="50" x1="100" y2="50" x2="200" style="stroke:#d69ace;stroke-width:10" />
+
+          <text transform="rotate(-45, 130,-230 )" font-size="16px">Verdun</text>
+          <circle cy="50" cx="200" r="10" stroke="#d69ace" stroke-width="4" fill="#d69ace" />
+
+          <line y1="50" x1="200" y2="50" x2="300" style="stroke:#d69ace;stroke-width:10" />
+
+          <text  x="300" transform="rotate(-45,310,50)" font-size="16px">Les Platanes</text>
+
+          <circle cy="50" cx="300" r="10" stroke="#d69ace" stroke-width="4" fill="#d69ace" />
+
+          <line y1="50" x1="300" y2="50" x2="400" style="stroke:#d69ace;stroke-width:10" />
+
+          <text x="400" transform="rotate(-45,400, 50 )" font-size="14px">La fourchette de Champigny</text>
+
+          <circle cy="50" cx="400" r="10" stroke="#d69ace" stroke-width="4" fill="#d69ace" />
+
+          <line y1="50" x1="400" y2="50" x2="500" style="stroke:#d69ace;stroke-width:10" />
+          <text x="500" transform="rotate(-45, 500,50 )" font-size="16px">Aristide Briand- Le Plant</text>
+
+          <circle cy="50" cx="500" r="10" stroke="#d69ace" stroke-width="4" fill="#d69ace" />
+
+          <line y1="50" x1="500" y2="50" x2="200" style="stroke:#d69ace;stroke-width:10" />
+
+          <text x="600" transform="rotate(-45, 600,50 )" font-size="16px">Jean Baptiste Clément</text>
+
+          <circle cy="50" cx="600" r="10" stroke="#d69ace" stroke-width="4" fill="#d69ace" />
+
+          <line y1="50" x1="500" y2="50" x2="600" style="stroke:#d69ace;stroke-width:10" />
+          <text x="700" transform="rotate(-45, 700,50 )" font-size="16px">Plage de Champigny</text>
+
+          <circle cy="50" cx="700" r="10" stroke="#d69ace" stroke-width="4" fill="#d69ace" />
+
+          <line y1="50" x1="600" y2="50" x2="700" style="stroke:#d69ace;stroke-width:10" />
+
+          <text x="800" transform="rotate(-45, 800,30 )" font-size="16px">Guittard</text>
+          <circle cy="50" cx="800" r="10" stroke="#d69ace" stroke-width="4" fill="#d69ace" />
+
+          <line y1="50" x1="700" y2="50" x2="800" style="stroke:#d69ace;stroke-width:10" />
+
+          <text x="900" transform="rotate(-45, 900,50 )" font-size="16px">Mairie-Marché</text>
+
+          <circle cy="50" cx="900" r="10" stroke="#d69ace" stroke-width="4" fill="#d69ace" />
+
+          <line y1="50" x1="800" y2="50" x2="900" style="stroke:#d69ace;stroke-width:10" />
+
+          <text x="1000" transform="rotate(-45, 1000, 50 )" font-size="16px">Mairie de Champigny</text>
+
+          <circle cy="50" cx="900" r="10" stroke="#d69ace" stroke-width="4" fill="#d69ace" />
+
+          <line y1="50" x1="800" y2="50" x2="900" style="stroke:#d69ace;stroke-width:10" />
+
+          <text x="1100" transform="rotate(-45, 1100,50 )" font-size="16px">Rue à Trait</text>
+
+          <circle cy="50" cx="1000" r="10" stroke="#d69ace" stroke-width="4" fill="#d69ace" />
+
+          <line y1="50" x1="900" y2="50" x2="1000" style="stroke:#d69ace;stroke-width:10" />
+
+          <text x="1200" transform="rotate(-45, 1200,50 )" font-size="16px">Polyclinique</text>
+
+          <circle cy="50" cx="1100" r="10" stroke="#d69ace" stroke-width="4" fill="#d69ace" />
+
+          <line y1="50" x1="1000" y2="50" x2="1100" style="stroke:#d69ace;stroke-width:10" />
+          <text x="1250" transform="rotate(-45, 1270,50 )" font-size="16px">Champigny-Jeanne Vacher</text>
+
+          <circle cy="50" cx="1200" r="10" stroke="#d69ace" stroke-width="4" fill="#d69ace" />
+
+          <line y1="50" x1="1100" y2="50" x2="1200" style="stroke:#d69ace;stroke-width:10" />
+
+          <circle cy="50" cx="1300" r="20" stroke="#d69ace" stroke-width="4" fill="#d69ace" />
+
+          <line y1="50" x1="1200" y2="50" x2="1300" style="stroke:#d69ace;stroke-width:10" />
+        </g>
+
+
+      </svg>
+      <svg id="svg-retour" width="1300" height="300" viewBox="-30 -60 1200 120">
+
+        <g id="plan" >
+          <text transform="rotate(-45, 50,40 )" font-size="16px">Champigny-Jeanne Vacher</text>
+          <circle cy="50" cx="30" r="20" stroke="#d69ace" stroke-width="4" fill="#d69ace" />
+
+          <line y1="50" x1="50" y2="50" x2="100" style="stroke:#d69ace;stroke-width:10" />
+
+          <text transform="rotate(-45, 80, -70)" font-size="14px">Polyclinique</text>
+          <circle cy="50" cx="100" r="10" stroke="#d69ace" stroke-width="4" fill="#d69ace" />
+
+          <line y1="50" x1="100" y2="50" x2="200" style="stroke:#d69ace;stroke-width:10" />
+
+          <text transform="rotate(-45, 130,-230 )" font-size="16px">Rue a Trait</text>
+          <circle cy="50" cx="200" r="10" stroke="#d69ace" stroke-width="4" fill="#d69ace" />
+
+          <line y1="50" x1="200" y2="50" x2="300" style="stroke:#d69ace;stroke-width:10" />
+
+          <text  x="300" transform="rotate(-45,310,50)" font-size="16px">Mairie de Champigny</text>
+
+          <circle cy="50" cx="300" r="10" stroke="#d69ace" stroke-width="4" fill="#d69ace" />
+
+          <line y1="50" x1="300" y2="50" x2="400" style="stroke:#d69ace;stroke-width:10" />
+
+          <text x="400" transform="rotate(-45,400, 50 )" font-size="14px">Mairire-Marché</text>
+
+          <circle cy="50" cx="400" r="10" stroke="#d69ace" stroke-width="4" fill="#d69ace" />
+
+          <line y1="50" x1="400" y2="50" x2="500" style="stroke:#d69ace;stroke-width:10" />
+          <text x="500" transform="rotate(-45, 500,50 )" font-size="16px">Guittard</text>
+
+          <circle cy="50" cx="500" r="10" stroke="#d69ace" stroke-width="4" fill="#d69ace" />
+
+          <line y1="50" x1="500" y2="50" x2="200" style="stroke:#d69ace;stroke-width:10" />
+
+          <text x="600" transform="rotate(-45, 600,50 )" font-size="16px">Plage de Champigny</text>
+
+          <circle cy="50" cx="600" r="10" stroke="#d69ace" stroke-width="4" fill="#d69ace" />
+
+          <line y1="50" x1="500" y2="50" x2="600" style="stroke:#d69ace;stroke-width:10" />
+          <text x="700" transform="rotate(-45, 700,50 )" font-size="16px">Jean Baptiste Clément</text>
+
+          <circle cy="50" cx="700" r="10" stroke="#d69ace" stroke-width="4" fill="#d69ace" />
+
+          <line y1="50" x1="600" y2="50" x2="700" style="stroke:#d69ace;stroke-width:10" />
+
+          <text x="800" transform="rotate(-45, 800,30 )" font-size="16px">Aristide Briand - Le Plant</text>
+          <circle cy="50" cx="800" r="10" stroke="#d69ace" stroke-width="4" fill="#d69ace" />
+
+          <line y1="50" x1="700" y2="50" x2="800" style="stroke:#d69ace;stroke-width:10" />
+
+          <text x="900" transform="rotate(-45, 900,50 )" font-size="16px">La Fourchette de Champigny</text>
+
+          <circle cy="50" cx="900" r="10" stroke="#d69ace" stroke-width="4" fill="#d69ace" />
+
+          <line y1="50" x1="800" y2="50" x2="900" style="stroke:#d69ace;stroke-width:10" />
+
+          <text x="1000" transform="rotate(-45, 1000, 50 )" font-size="16px">Les Platanes</text>
+
+          <circle cy="50" cx="900" r="10" stroke="#d69ace" stroke-width="4" fill="#d69ace" />
+
+          <line y1="50" x1="800" y2="50" x2="900" style="stroke:#d69ace;stroke-width:10" />
+
+          <text x="1100" transform="rotate(-45, 1100,50 )" font-size="16px">Verdun</text>
+
+          <circle cy="50" cx="1000" r="10" stroke="#d69ace" stroke-width="4" fill="#d69ace" />
+
+          <line y1="50" x1="900" y2="50" x2="1000" style="stroke:#d69ace;stroke-width:10" />
+
+          <text x="1200" transform="rotate(-45, 1200,50 )" font-size="16px">Carrefour de la Résistance</text>
+
+          <circle cy="50" cx="1100" r="10" stroke="#d69ace" stroke-width="4" fill="#d69ace" />
+
+          <line y1="50" x1="1000" y2="50" x2="1100" style="stroke:#d69ace;stroke-width:10" />
+          <text x="1250" transform="rotate(-45, 1270,50 )" font-size="16px">Joinville-le-Pont RER</text>
+
+          <circle cy="50" cx="1200" r="10" stroke="#d69ace" stroke-width="4" fill="#d69ace" />
+
+          <line y1="50" x1="1100" y2="50" x2="1200" style="stroke:#d69ace;stroke-width:10" />
+
+          <circle cy="50" cx="1300" r="20" stroke="#d69ace" stroke-width="4" fill="#d69ace" />
+
+          <line y1="50" x1="1200" y2="50" x2="1300" style="stroke:#d69ace;stroke-width:10" />
+        </g>
+      </svg>
+      <h3>{{ title }}</h3>
+
+      <sebm-google-map [latitude]="lat" [longitude]="lng">
+        <sebm-google-map-marker [latitude]="lat" [longitude]="lng"></sebm-google-map-marker>
+      </sebm-google-map>
+    </div>
+
+

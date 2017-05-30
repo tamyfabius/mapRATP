@@ -1,5 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-import {HoraireService} from "./horaire.service";
+import {Component, OnInit} from '@angular/core';
+import {HoraireService} from './horaire.service';
+import { HoraireStationInterface} from './horaire.station.Interface';
+import {HoraireDestinationInterface} from './horaire.destination.interface';
+
 
 @Component({
   moduleId: module.id,
@@ -9,14 +12,13 @@ import {HoraireService} from "./horaire.service";
 })
 export class HoraireComponent implements OnInit {
 
-  bus: string = 'bus';
-  code: string = '';
+  dataStations: HoraireStationInterface[]= [];
+  dataDestination: HoraireDestinationInterface[] = [];
 
-  dataStations: Array<any> = [];
-  dataDestination: Array<any> = [];
+  dataStat: any = '';
+  dataDest: any = '';
 
-  constructor(private _horaireService: HoraireService) {
-  }
+  constructor(private _horaireService: HoraireService) {}
 
   ngOnInit() {
     this.getListStations();
@@ -34,5 +36,15 @@ export class HoraireComponent implements OnInit {
       .getStationsByTypeCode()
       .subscribe(result => this.dataStations = result.result);
   }
+
+  getDestBus(event: any){
+    this.dataDest = event.target.value;
+  }
+
+  // getStationBus(event: any){
+  //   this.dataStat = event.target.value;
+  // }
 }
+
+
 

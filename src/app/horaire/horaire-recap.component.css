@@ -1,0 +1,43 @@
+div
+{
+  font-size:24px;
+}
+h2
+{
+  font-size:24px!important;
+
+}
+
+#plan{
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+}
+.sebm-google-map-container {
+  height: 300px;
+}
+
+#svg-retour{
+  display:none;
+}
+@media screen and (max-width: 900px)
+{
+  /*svg*/
+  /*{*/
+    /*-webkit-transform: scale(0.8);*/
+    /*-moz-transform: scale(0.8);*/
+    /*-ms-transform: scale(0.8);*/
+    /*-o-transform: scale(0.8);*/
+    /*transform: scale(0.9) translateX(-100px);*/
+  /*}*/
+  svg
+  {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}

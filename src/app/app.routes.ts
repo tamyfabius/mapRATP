@@ -6,6 +6,7 @@ import {Type} from '@angular/core';
 import {AccueilComponent} from './accueil/accueil.component';
 import {PlanComponent} from './plan/plan.component';
 import {HoraireComponent} from './horaire/horaire.component';
+import {HoraireRecapComponent} from './horaire/horaire-recap.component';
 import {ContactComponent} from './contact/contact.component';
 
 interface Route {
@@ -19,6 +20,7 @@ export const AppRoutes: Route[] = [
   {path: 'accueil', component: AccueilComponent},
   {path: 'plan', component: PlanComponent},
   {path: 'horaire', component: HoraireComponent},
+  {path: 'horaire-recap', component: HoraireRecapComponent},
   {path: 'contact', component: ContactComponent},
   {path: '', redirectTo: 'accueil', pathMatch: 'full'}
 ];

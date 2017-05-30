@@ -9,50 +9,47 @@
         <div class="other-focuses other-focuses-destination">
           <h5><span class="section-footer-title">Destination</span></h5>
         </div>
-
-        <!-- DESTINATION -->
-        <div class="row">
-          <div class="col-md-12">
-            <div class="funkyradio">
-              <div class="funkyradio-success" *ngFor="let destination of dataDestination">
-                <input type="radio" name="radio" id={{destination.way}} value={{destination.name}}/>
-                <label for={{destination.way}}>{{destination.name}} </label>
+        <form>
+          <!-- DESTINATION -->
+          <div class="row">
+            <div class="col-md-12">
+              <div class="funkyradio">
+                <div class="funkyradio-success" *ngFor="let destination of dataDestination">
+                  <input type="radio" name="radio" id={{destination.way}} value={{destination.name}} (click)="getDestBus($event)"/>
+                  <label for={{destination.way}}>{{destination.name}}</label>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- STATIONS -->
-        <!-- OTHER FOCUS STATIONS -->
-        <div class="other-focuses other-focuses-station">
-          <h5><span class="section-footer-title">Station</span></h5>
-        </div>
-        <!--<div class="row">-->
-        <!--<div class="col-md-12">-->
-        <!--<form>-->
-        <!--<select name="" id="" class="form-control" >-->
-        <!--<option value="" *ngFor="let station of dataStations.stations">{{ station.name }}</option>-->
-        <!--</select>-->
-        <!--</form>-->
-        <!--</div>-->
-        <!--</div>-->
+          <!-- STATIONS -->
+          <!-- OTHER FOCUS STATIONS -->
+          <div class="other-focuses other-focuses-station">
+            <h5><span class="section-footer-title">Station</span></h5>
+          </div>
 
-        <!-- Other Station -->
-        <div class="row">
-          <div class="col-md-12">
-            <div class="custom-select">
-              <select id="fxselect" name="fxselect">
-                <option value="-1" selected="">Choisissez votre station</option>
-                <option *ngFor="let stat of dataStations.stations" value="{{ stat.name }}">{{ stat.name }}</option>
-              </select>
+          <!-- Other Station -->
+          <div class="row">
+            <div class="col-md-12">
+              <div class="custom-select">
+                <select id="fxselect" name="fxselect" [(ngModel)]="dataStat" >
+                  <option value="-1" selected="">Choisissez votre station</option>
+                  <option *ngFor="let station of dataStations.stations" [ngValue]="station.name">{{ station.name }}</option>
+                </select>
+              </div>
             </div>
           </div>
-        </div>
-
+        </form>
       </div>
     </div>
   </div>
-  <!--<h1 class="titleBus">Bus 108</h1>-->
 
-
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h3 class="panel-title">Resultat</h3>
+    </div>
+    <div class="panel-body">
+      <app-horaire-recap [destDataBus]="dataDest" [statDataBus]="dataStat"></app-horaire-recap>-->
+    </div>
+  </div>
 </div>
